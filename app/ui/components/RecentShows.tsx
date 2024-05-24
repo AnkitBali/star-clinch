@@ -29,7 +29,7 @@ const RecentShows: FC = () => {
       <Heading className='text-white' textAlign="center" as="h1" size="xl" mb={4}>
         Recent shows made star studded via Star-clinch
       </Heading>
-      <Box position="relative" overflow="hidden">
+      <Box position="relative" className='flex justify-center' overflow="hidden">
         <Flex alignItems="center" justifyContent="center" position="relative">
           <IconButton
             aria-label="Scroll left"
@@ -52,7 +52,7 @@ const RecentShows: FC = () => {
               duration: 0.5,
             }}
           >
-            <Flex className='mt-20' alignItems="center" space-x={4}>
+            <Flex className='mt-20 mx-40' alignItems="center" space-x={4}>
               <Image
                 src={shows[currentIndex].image}
                 alt={shows[currentIndex].title}
