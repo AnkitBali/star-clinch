@@ -1,10 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import { ChakraProvider } from '@chakra-ui/react'
-import TopBanner from "./ui/TopBanner";
-import Gallery from "./ui/Gallery";
-import ZigZagPosts from "./ui/ZigzagPosts";
+import TopBanner from "./ui/components/TopBanner";
+import Gallery from "./ui/components/Gallery";
+import ZigZagPosts from "./ui/components/ZigZagPosts";
 import Navbar from "./ui/components/Navbar";
+import RecentShows from "./ui/components/RecentShows";
 
 
 
@@ -36,7 +37,7 @@ const Home: React.FC = () => {
       <TopBanner />
       <Gallery />
       <ZigZagPosts posts={posts} />
-      
+      <RecentShows />
       
 
     </ChakraProvider>

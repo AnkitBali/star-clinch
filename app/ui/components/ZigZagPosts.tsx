@@ -50,7 +50,7 @@ const ZigZagPosts: React.FC<ZigZagPostsProps> = ({ posts }) => {
               borderRadius="10px"
               src={post.imageUrl}
               alt={post.title}
-              boxSize="400px"
+              boxSize="250px"
               style={{ opacity: 0.7 }}
             />
           </motion.div>

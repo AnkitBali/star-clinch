@@ -5,7 +5,7 @@
 import { motion, Variants } from 'framer-motion';
 import { useState } from 'react';
 import { Spacer, Box, Text } from '@chakra-ui/react';
-import CustomButton from './components/CustomButton';
+import CustomButton from './CustomButton';
 
 interface CardProps {
   position: 'left' | 'center' | 'right';
