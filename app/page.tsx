@@ -6,7 +6,8 @@ import Gallery from "./ui/components/Gallery";
 import ZigZagPosts from "./ui/components/ZigZagPosts";
 import Navbar from "./ui/components/Navbar";
 import RecentShows from "./ui/components/RecentShows";
-// import EllipseComponent from "./ui/components/EllipseComponent";
+import EllipseComponent from "./ui/components/EllipseComponent";
+
 
 
 
@@ -39,7 +40,7 @@ const Home: React.FC = () => {
       <Gallery />
       <ZigZagPosts posts={posts} />
       <RecentShows />
-      {/* <EllipseComponent /> */}
+      <EllipseComponent />
 
     </ChakraProvider>
     
