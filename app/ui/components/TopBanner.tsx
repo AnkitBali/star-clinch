@@ -99,8 +99,8 @@ const TopBanner: React.FC = () => {
   <div className=" opacity-40 w-[800px] h-[800px] bg-gradient-to-br from-orange-500/100 via-orange-500/30 to-transparent rounded-full transform -translate-x-1/2 translate-y-1/2" />
 </div>
  {/* Top Left Quarter Ellipse */}
- <div className="absolute right-[-100px] top-[-100px] w-[600px] h-[800px] overflow-hidden">
-        <div className=" opacity-40 w-[600px] h-[800px] bg-gradient-to-br from-purple-500/100 via-purple-500/0 to-transparent rounded-full transform translate-x-1/3 translate-y-1/4" />
+ <div className="absolute right-[-0px] top-[-40px] w-[400px] h-[600px] overflow-hidden">
+        <div className=" opacity-40 w-[400px] h-[600px] bg-gradient-to-br from-purple-600/100 via-purple-900/30  to-transparent rounded-full transform translate-x-1/3 translate-y-1/4" />
       </div>
 
     
