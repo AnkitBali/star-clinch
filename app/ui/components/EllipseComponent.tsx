@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 // import 'tailwindcss/tailwind.css';
 import CustomButton from './CustomButton';
 import '@fontsource/pacifico'; // Import Pacifico font
+import Pill from './Pill';
 
 const MotionBox = motion(Box);
 
@@ -28,9 +29,33 @@ const EllipseComponent: React.FC = () => {
         animate={{ scale: 1 }}
         transition={{ duration: 0.5 }}
       >
+        <Box className='zIndex-10 absolute' style={{ transform: 'rotate(-15deg)', top: '180px', left: '200px' }}>
+        <Pill text='Fun' />
+        </Box>
+        <Box className='absolute' style={{ transform: 'rotate(10deg)', top: '80px', right: '200px' }}>
+        <Pill text='Inclusive' />
+        </Box>
+        <Box className='absolute' style={{ transform: 'rotate(-10deg)', bottom: '0px', left: '200px' }}>
+          <Pill text='Focused' />
+        </Box>
+        <Box className='absolute' style={{ transform: 'rotate(10deg)', bottom: '0px', left: '320px' }}>
+          <Pill text='Collaborative' />
+        </Box>
+        <Box className='absolute' style={{ transform: 'rotate(-10deg)', bottom: '0px', left: '500px' }}>
+          <Pill text='United' />
+        </Box>
+        <Box className='absolute' style={{ transform: 'rotate(10deg)', bottom: '0px', right: '380px' }}>
+          <Pill text='Vibrant' />
+        </Box>
+        <Box className='absolute' style={{ transform: 'rotate(-10deg)', bottom: '0px', right: '270px' }}>
+          <Pill text='Dynamic' />
+        </Box>
+        <Box className='absolute' style={{ transform: 'rotate(10deg)', bottom: '0px', right: '150px' }}>
+          <Pill text='Motivated' />
+        </Box>
         {/* New Text with Pacifico Font */}
         <Text
-          className="absolute text-purple-500"
+          className="absolute text-pink-400"
           style={{
             fontFamily: 'Pacifico',
             fontSize: '30px',
@@ -44,7 +69,7 @@ const EllipseComponent: React.FC = () => {
         {/* Curved Arrow SVG */}
         <svg
   className="absolute"
-  style={{ top: '-20px', left: '400px', transform: 'rotate(60deg)' }}
+  style={{ top: '-0px', left: '380px', transform: 'rotate(60deg)' }}
   width="100"
   height="100"
   viewBox="0 0 100 100"
@@ -71,11 +96,13 @@ const EllipseComponent: React.FC = () => {
     </marker>
   </defs>
 </svg>
-        <Text fontSize={"60px"} className="text-white text-center font-bold mb-2">20 + talented folks</Text>
+        <Text fontSize={"60px"} className="zIndex-[-10] text-white text-center font-bold mb-2">20 + talented folks</Text>
+        
+       
         <Text width={"60%"} textAlign={"center"} fontSize={"20px"} className="text-white text-center mb-4">
           From passion driven dedication to impactful contributions, we do it all here. We are growing and we will be excited to hear from you!
         </Text>
-        <CustomButton>Join Our Team →</CustomButton>
+        <CustomButton >Join Our Team →</CustomButton>
         <div className="absolute inset-0 w-full h-full border-full border-white" ></div>
       </MotionBox>
     </div>

@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 
 interface ButtonProps {
   children: React.ReactNode;
+  id?: string; 
 }
 
 const MotionButton = motion(Button);
@@ -31,7 +32,7 @@ const CustomButton: React.FC<ButtonProps> = ({ children }) => {
         pointerEvents="none"
         py={"30px"}
       />
-      <Box fontSize={"20px"}  >
+      <Box fontSize={"20px"} >
         {children}
       </Box>
     </MotionButton>
